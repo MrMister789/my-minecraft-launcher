@@ -1,4 +1,3 @@
-
 const { app, BrowserWindow, ipcMain } = require('electron');
 const path = require('path');
 const { Client } = require('minecraft-launcher-core');
@@ -54,4 +53,3 @@ ipcMain.handle('launch-minecraft', async (event, version) => {
     return { success: false, error: err.message };
   }
 });
-    
